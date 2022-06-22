@@ -6,4 +6,4 @@ var app = http.createServer(function (req, res) {
   res.end(fs.readFileSync("./hodnotenia.json", { encoding: "utf8" }));
 });
 
-app.listen(3000);
+app.listen(process.env.PORT);
